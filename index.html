@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<script src="https://use.fontawesome.com/12fe0beb6b.js"></script>    
+<title>Lanches Gourmet</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">FECHAR</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LANCHES</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SOBRE O TRAILER</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTATO</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Trailer Paulista &nbsp<i class="fa fa-cutlery"></i></span>
+  
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="imgs/pamplona.jpg" style="width:100%" onclick="onClick(this)" alt="Pamplona">
+      <img src="imgs/pernil.jpg" style="width:100%" onclick="onClick(this)" alt="Pernil">
+      <img src="imgs/tradicional.jpg" style="width:100%" onclick="onClick(this)" alt="Tradicional">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="imgs/paulistaX3.jpg" style="width:100%" onclick="onClick(this)" alt="Paulista">
+      <img src="imgs/kaftanabaguete.jpg" style="width:100%" onclick="onClick(this)" alt="Kafta na Baguete">
+      <img src="imgs/maspduplo.jpg" style="width:100%" onclick="onClick(this)" alt="Masp Duplo">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="imgs/tradicional.jpg" style="width:100%" onclick="onClick(this)" alt="Tradicional">
+      <img src="imgs/maspduplo.jpg" style="width:100%" onclick="onClick(this)" alt="Masp Duplo">
+      <img src="imgs/paulistaX3.jpg" style="width:100%" onclick="onClick(this)" alt="Paulista">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="imgs/pamplona.jpg" style="width:100%" onclick="onClick(this)" alt="Pamplona">
+      <img src="imgs/pernil.jpg" style="width:100%" onclick="onClick(this)" alt="Pernil">
+      <img src="imgs/kaftanabaguete.jpg" style="width:100%" onclick="onClick(this)" alt="Kafta na Baguete">
+    </div>
+  </div>
+
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-white w3-center w3-text-black w3-padding-32" id="about">
+    <h4><b>Sobre o Trailer</b></h4>
+    <img src="imgs/trailer.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Missão</h4>
+      <p> "Criar sabores que satisfaçam até os paladares mais refinados."
+	  <!--O dono do empreendimento Trailer Paulista, Paulo Cordeiro, tem como missão lucrar na venda de lanches, 
+          assim levando seus Lanches Gourmets a seus clientes. Paulo necessitava de uma
+           fonte extra de renda e vendo a oportunidade na criação e vendas de lanches criou a marca Trailer Paulista.-->
+      </p>
+      <h4>Visão</h4>
+      <p>"Ser a marca de lanches gourmet mais reconhecida na região, que proporcione a melhor experiência ao menor preço."
+	  
+
+      </p>
+      <h4>Valores</h4>
+      <p>
+		Preço Justo; <br/>
+		Alegria;<br/>
+		Originalidade;<br/>
+		Foco no Consumidor.<br/>
+      </p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Características</h4>
+      <p class="w3-wide">Nível de Aconchego</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Nível de Limpeza</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Nível de Satisfação</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Lanches à partir de R$11,90</p>
+      <p class="w3-wide">Todos os lanches acompanham fritas.</p>
+      <hr class="w3-opacity">
+
+      <h4 class="w3-padding-16">Clientes</h4>
+      <img src="imgs/pessoal.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+      <div class="w3-panel w3-card-4 w3-center" style="width:100%">
+            <span style="font-size:100px">&#10077;</span><br>
+            <p style="margin-top:-60px">
+            <i><b>São as amizades que fornecem forças ao Trailer Paulista, e 
+                são para mantê-las que nos dedicamos em nossa culinária. Venha ser nosso amigo também!</b></i></p>
+      </div>
+      
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h2 class="w3-center"><b>Contato</b></h2>
+      <h3 class="w3-center"><i class="fa fa-whatsapp"></i> <i>(19) 98140-5606</i></h3>
+      <h4 class="w3-center">Sua visita é muito importante!</h4> 
+      <h3 class="w3-center"><i class="fa fa-home"></i> <i>Rua José Ferreira Gomes 42
+            Sumaré</i></h3>
+            <iframe src="https://snazzymaps.com/embed/12095" width="100%" height="600px" style="border:none;"></iframe>
+      <h2></h2>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>Feito por:</h3>
+        <img class="w3-image" src="imgs/kjal.png" alt="KJAL Systems">
+        <p>Site institucional oferecido ao Trailer Paulista, como requisito parcial para obtenção do título Técnico em Informática, pela ETEC de Nova Odessa. Desenvolvedores: Kleber Almendro, João Aliscantes, Aleph Santos e Lucas Marchiori (KJAL).<p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>
+            <a href="https://www.facebook.com/trailerpaulistasumare/">
+                <i class="fa fa-facebook"></i> FACEBOOK
+            </a>
+        </h3>
+        <ul class="w3-ul">
+            <a href="https://www.facebook.com/trailerpaulistasumare/photos/a.1672442853080969.1073741828.1672427746415813/1672448409747080/?type=3&theater">
+                <li class="w3-padding-16 w3-hover-black">
+                        <img src="imgs/sexta.jpg" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Hoje é sextaaaaaa!</span><br>
+                        <span>Promoção de férias</span>
+                    
+                </li>
+            </a>
+            <a href="https://www.facebook.com/trailerpaulistasumare/photos/a.1672442853080969.1073741828.1672427746415813/1823523257972927/?type=3&theater">
+            <li class="w3-padding-16 w3-hover-black">
+                
+                <img src="imgs/bacon.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Hambúrguer com bacon</span><br>
+                <span></span>
+
+            </li> 
+            </a>
+        </ul>
+      </div>
+
+      
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Tecnologia <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
