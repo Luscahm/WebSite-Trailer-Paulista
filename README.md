@@ -1,15 +1,15 @@
 # Trailer-Paulista-Website
-> Site institucional oferecido ao Trailer Paulista, como requisito parcial para obtenção do título Técnico em Informática, pela ETEC de Nova Odessa. Desenvolvedores: Kleber Almendro, João Aliscantes, Aleph Santos e Lucas Marchiori (KJAL).
+> institutional website for "Trailer Paulista", for undergraduate thesis of certificate in information technology at "ETEC de Nova Odessa". Developers: Kleber Almendro, João Aliscantes, Aleph Santos e Lucas Marchiori (KJAL).
 
-> Menu Lateral
+> Sidebar menu
 ![ProjectLogo](https://github.com/Luscahm/WebSite-Trailer-Paulista/blob/master/Screenshots/side-bar.PNG)
 
-> Lanches/inicio
+> Burgers/Home
 ![ProjectLogo](https://github.com/Luscahm/WebSite-Trailer-Paulista/blob/master/Screenshots/inicio.PNG)
 
-> Sobre o trailer
+> About the "Trailer"
 ![ProjectLogo](https://github.com/Luscahm/WebSite-Trailer-Paulista/blob/master/Screenshots/sobre.PNG)
 
->contato e créditos
+> Contact and credit
 ![ProjectLogo](https://github.com/Luscahm/WebSite-Trailer-Paulista/blob/master/Screenshots/contato.PNG)
 
